@@ -1,0 +1,142 @@
+-- The C compiler identification is AppleClang 15.0.0.15000100
+-- The CXX compiler identification is AppleClang 15.0.0.15000100
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Building MLX for arm64 processor on Darwin
+-- Building METAL sources
+-- Building with SDK for macOS version 14.2
+
+-- Accelerate found /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/Accelerate.framework
+-- Downloading json
+-- Using the multi-header code from /Users/guptaaryan16/Desktop/OSS/mlx/build/_deps/json-src/include/
+-- Downloading gguflib
+CMake Deprecation Warning at build/_deps/doctest-src/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
+-- Configuring done (24.4s)
+-- Generating done (0.1s)
+-- Build files have been written to: /Users/guptaaryan16/Desktop/OSS/mlx/build
+[  1%] Building indexing.air
+[  2%] Building steel_gemm_splitk.air
+[  3%] Building C object mlx/io/CMakeFiles/gguflib.dir/__/__/_deps/gguflib-src/gguflib.c.o
+[  4%] Building sort.air
+[  5%] Building steel_gemm.air
+[  6%] Building quantized.air
+[  7%] Building reduce.air
+[  8%] Building C object mlx/io/CMakeFiles/gguflib.dir/__/__/_deps/gguflib-src/fp16.c.o
+[  9%] Building binary_two.air
+[ 10%] Building scan.air
+[ 12%] Building unary.air
+[ 13%] Building gemv.air
+[ 14%] Building arange.air
+[ 14%] Building softmax.air
+[ 14%] Building copy.air
+[ 15%] Building random.air
+[ 16%] Building steel_gemm_addmm.air
+[ 17%] Building binary.air
+[ 18%] Building arg_reduce.air
+[ 19%] Building conv.air
+[ 20%] Linking C static library libgguflib.a
+[ 20%] Built target gguflib
+[ 21%] Building mlx.metallib
+[ 21%] Built target mlx-metallib
+[ 22%] Building CXX object CMakeFiles/mlx.dir/mlx/device.cpp.o
+[ 23%] Building CXX object CMakeFiles/mlx.dir/mlx/allocator.cpp.o
+[ 25%] Building CXX object CMakeFiles/mlx.dir/mlx/dtype.cpp.o
+[ 25%] Building CXX object CMakeFiles/mlx.dir/mlx/array.cpp.o
+[ 26%] Building CXX object CMakeFiles/mlx.dir/mlx/ops.cpp.o
+[ 26%] Building CXX object CMakeFiles/mlx.dir/mlx/primitives.cpp.o
+[ 27%] Building CXX object CMakeFiles/mlx.dir/mlx/fft.cpp.o
+[ 28%] Building CXX object CMakeFiles/mlx.dir/mlx/scheduler.cpp.o
+[ 29%] Building CXX object CMakeFiles/mlx.dir/mlx/backend/common/arg_reduce.cpp.o
+[ 30%] Building CXX object CMakeFiles/mlx.dir/mlx/transforms.cpp.o
+[ 31%] Building CXX object CMakeFiles/mlx.dir/mlx/utils.cpp.o
+[ 32%] Building CXX object CMakeFiles/mlx.dir/mlx/compile.cpp.o
+[ 33%] Building CXX object CMakeFiles/mlx.dir/mlx/graph_utils.cpp.o
+[ 34%] Building CXX object CMakeFiles/mlx.dir/mlx/random.cpp.o
+[ 35%] Building CXX object CMakeFiles/mlx.dir/mlx/backend/common/conv.cpp.o
+[ 37%] Building CXX object CMakeFiles/mlx.dir/mlx/linalg.cpp.o
+[ 37%] Building CXX object CMakeFiles/mlx.dir/mlx/backend/common/copy.cpp.o
+[ 38%] Building CXX object CMakeFiles/mlx.dir/mlx/backend/common/fft.cpp.o
+[ 40%] Building CXX object CMakeFiles/mlx.dir/mlx/backend/common/primitives.cpp.o
+[ 40%] Building CXX object CMakeFiles/mlx.dir/mlx/backend/common/erf.cpp.o
+[ 41%] Building CXX object CMakeFiles/mlx.dir/mlx/backend/common/binary.cpp.o
+[ 42%] Building CXX object CMakeFiles/mlx.dir/mlx/backend/common/quantized.cpp.o
+[ 43%] Building CXX object CMakeFiles/mlx.dir/mlx/backend/common/reduce.cpp.o
+[ 44%] Building CXX object CMakeFiles/mlx.dir/mlx/backend/common/softmax.cpp.o
+[ 45%] Building CXX object CMakeFiles/mlx.dir/mlx/io/load.cpp.o
+[ 46%] Building CXX object CMakeFiles/mlx.dir/mlx/backend/common/sort.cpp.o
+[ 47%] Building CXX object CMakeFiles/mlx.dir/mlx/backend/common/indexing.cpp.o
+[ 47%] Building CXX object CMakeFiles/mlx.dir/mlx/backend/common/threefry.cpp.o
+[ 48%] Building CXX object CMakeFiles/mlx.dir/mlx/backend/common/scan.cpp.o
+[ 50%] Building CXX object CMakeFiles/mlx.dir/mlx/backend/common/qrf.cpp.o
+[ 50%] Building CXX object CMakeFiles/mlx.dir/mlx/backend/common/load.cpp.o
+[ 51%] Building CXX object CMakeFiles/mlx.dir/mlx/io/safetensor.cpp.o
+[ 52%] Building CXX object CMakeFiles/mlx.dir/mlx/io/gguf.cpp.o
+[ 54%] Building CXX object CMakeFiles/mlx.dir/mlx/backend/accelerate/conv.cpp.o
+[ 53%] Building CXX object CMakeFiles/mlx.dir/mlx/io/gguf_quants.cpp.o
+[ 56%] Building CXX object CMakeFiles/mlx.dir/mlx/backend/accelerate/quantized.cpp.o
+[ 56%] Building CXX object CMakeFiles/mlx.dir/mlx/backend/accelerate/primitives.cpp.o
+[ 57%] Building CXX object CMakeFiles/mlx.dir/mlx/backend/accelerate/reduce.cpp.o
+[ 58%] Building CXX object CMakeFiles/mlx.dir/mlx/backend/accelerate/matmul.cpp.o
+[ 59%] Building CXX object CMakeFiles/mlx.dir/mlx/backend/accelerate/softmax.cpp.o
+[ 60%] Building CXX object CMakeFiles/mlx.dir/mlx/backend/metal/conv.cpp.o
+[ 61%] Building CXX object CMakeFiles/mlx.dir/mlx/backend/metal/allocator.cpp.o
+[ 62%] Building CXX object CMakeFiles/mlx.dir/mlx/backend/metal/copy.cpp.o
+[ 63%] Building CXX object CMakeFiles/mlx.dir/mlx/backend/metal/device.cpp.o
+[ 63%] Building CXX object CMakeFiles/mlx.dir/mlx/backend/metal/fft.cpp.o
+[ 64%] Building CXX object CMakeFiles/mlx.dir/mlx/backend/metal/metal.cpp.o
+[ 65%] Building CXX object CMakeFiles/mlx.dir/mlx/backend/metal/indexing.cpp.o
+[ 66%] Building CXX object CMakeFiles/mlx.dir/mlx/backend/metal/matmul.cpp.o
+[ 67%] Building CXX object CMakeFiles/mlx.dir/mlx/backend/metal/scan.cpp.o
+[ 68%] Building CXX object CMakeFiles/mlx.dir/mlx/backend/metal/quantized.cpp.o
+[ 69%] Building CXX object CMakeFiles/mlx.dir/mlx/backend/metal/primitives.cpp.o
+[ 70%] Building CXX object CMakeFiles/mlx.dir/mlx/backend/metal/sort.cpp.o
+[ 71%] Building CXX object CMakeFiles/mlx.dir/mlx/backend/metal/softmax.cpp.o
+[ 72%] Building CXX object CMakeFiles/mlx.dir/mlx/backend/metal/reduce.cpp.o
+[ 73%] Linking CXX static library libmlx.a
+[ 73%] Built target mlx
+[ 74%] Building CXX object examples/cpp/CMakeFiles/tutorial.dir/tutorial.cpp.o
+[ 75%] Building CXX object examples/cpp/CMakeFiles/logistic_regression.dir/logistic_regression.cpp.o
+[ 76%] Building CXX object examples/cpp/CMakeFiles/linear_regression.dir/linear_regression.cpp.o
+[ 77%] Building CXX object tests/CMakeFiles/tests.dir/tests.cpp.o
+[ 78%] Building CXX object tests/CMakeFiles/tests.dir/arg_reduce_tests.cpp.o
+[ 79%] Building CXX object tests/CMakeFiles/tests.dir/array_tests.cpp.o
+[ 80%] Building CXX object tests/CMakeFiles/tests.dir/allocator_tests.cpp.o
+[ 80%] Building CXX object tests/CMakeFiles/tests.dir/blas_tests.cpp.o
+[ 81%] Building CXX object tests/CMakeFiles/tests.dir/custom_vjp_tests.cpp.o
+[ 82%] Building CXX object tests/CMakeFiles/tests.dir/compile_tests.cpp.o
+[ 83%] Building CXX object tests/CMakeFiles/tests.dir/device_tests.cpp.o
+[ 84%] Building CXX object tests/CMakeFiles/tests.dir/load_tests.cpp.o
+[ 85%] Building CXX object tests/CMakeFiles/tests.dir/eval_tests.cpp.o
+[ 86%] Building CXX object tests/CMakeFiles/tests.dir/linalg_tests.cpp.o
+[ 87%] Building CXX object tests/CMakeFiles/tests.dir/autograd_tests.cpp.o
+[ 88%] Building CXX object tests/CMakeFiles/tests.dir/fft_tests.cpp.o
+[ 89%] Building CXX object tests/CMakeFiles/tests.dir/scheduler_tests.cpp.o
+[ 90%] Building CXX object tests/CMakeFiles/tests.dir/ops_tests.cpp.o
+[ 91%] Building CXX object tests/CMakeFiles/tests.dir/random_tests.cpp.o
+[ 92%] Building CXX object tests/CMakeFiles/tests.dir/creations_tests.cpp.o
+[ 93%] Building CXX object tests/CMakeFiles/tests.dir/metal_tests.cpp.o
+[ 94%] Building CXX object tests/CMakeFiles/tests.dir/vmap_tests.cpp.o
+[ 95%] Building CXX object tests/CMakeFiles/tests.dir/utils_tests.cpp.o
+[ 96%] Linking CXX executable linear_regression
+[ 97%] Linking CXX executable logistic_regression
+[ 98%] Linking CXX executable tutorial
+[ 98%] Built target linear_regression
+[ 98%] Built target tutorial
+[ 98%] Built target logistic_regression
+[100%] Linking CXX executable tests
+[100%] Built target tests

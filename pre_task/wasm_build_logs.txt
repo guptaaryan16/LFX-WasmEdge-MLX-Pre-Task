@@ -1,0 +1,121 @@
+-- The C compiler identification is AppleClang 15.0.0.15000100
+-- The CXX compiler identification is AppleClang 15.0.0.15000100
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Looking for C++ include filesystem
+-- Looking for C++ include filesystem - found
+-- Performing Test CXX_FILESYSTEM_NO_LINK_NEEDED
+-- Performing Test CXX_FILESYSTEM_NO_LINK_NEEDED - Success
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Found PkgConfig: /opt/homebrew/bin/pkg-config (found version "0.29.2")
+-- Checking for module 'grpc++'
+--   No package 'grpc++' found
+-- Looking for mmap
+-- Looking for mmap - found
+-- Looking for C++ include pwd.h
+-- Looking for C++ include pwd.h - found
+-- Performing Test HAVE_FFI_CALL
+-- Performing Test HAVE_FFI_CALL - Success
+-- Found FFI: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/lib/libffi.tbd
+-- Looking for histedit.h
+-- Looking for histedit.h - found
+-- Found LibEdit: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include (found version "2.11")
+-- Performing Test Terminfo_LINKABLE
+-- Performing Test Terminfo_LINKABLE - Success
+-- Found Terminfo: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/lib/libcurses.tbd
+-- Found ZLIB: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/lib/libz.tbd (found version "1.2.12")
+-- Found zstd: /opt/homebrew/lib/libzstd.dylib
+-- Found LibXml2: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/lib/libxml2.tbd (found version "2.9.4")
+-- Linker detection: unknown
+-- Performing Test SUPPORT_EXCLUDE_LIBS
+-- Performing Test SUPPORT_EXCLUDE_LIBS - Failed
+-- Build spdlog: 1.11.0
+-- Build type: Release
+-- WASI-NN GGML LLAMA backend: Disable LLAMA_CUBLAS
+-- WASI-NN GGML LLAMA backend: Disable LLAMA_BLAS
+-- WASI-NN GGML LLAMA backend: Enable LLAMA_METAL
+-- Downloading llama.cpp source
+-- Found Git: /usr/bin/git (found version "2.39.3 (Apple Git-145)")
+-- Metal framework found
+-- Warning: ccache not found - consider installing it or use LLAMA_CCACHE=OFF
+-- CMAKE_SYSTEM_PROCESSOR: arm64
+-- ARM detected
+-- Performing Test COMPILER_SUPPORTS_FP16_FORMAT_I3E
+-- Performing Test COMPILER_SUPPORTS_FP16_FORMAT_I3E - Failed
+-- Downloading SIMDJSON source
+-- Looking for fork
+-- Looking for fork - found
+-- Looking for wait
+-- Looking for wait - found
+-- Adding -Og to compile flag
+-- Downloading SIMDJSON source -- done
+-- WASI-NN: Build ggml backend for WASI-NN
+-- The ASM-ATT compiler identification is AppleClang
+-- Found assembler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/as
+-- Configuring done (62.1s)
+-- Generating done (0.1s)
+-- Build files have been written to: /Users/guptaaryan16/Desktop/OSS/WasmEdge/build
+[74/122] Generating build details from Git
+-- Found Git: /usr/bin/git (found version "2.39.3 (Apple Git-145)")
+[115/122] Linking CXX shared library lib/api/libwasmedge.0.0.3.dylib
+ld: warning: ignoring duplicate libraries: '_deps/spdlog-build/libspdlog.a'
+[122/122] Creating text-based stubs plugins/wasi_nn/libwasmedgePluginWasiNN.tbd
+-- Install configuration: "Release"
+-- Installing: /usr/local/lib/libwasmedge.0.0.3.tbd
+CMake Error at build/lib/api/cmake_install.cmake:41 (file):
+  file INSTALL cannot copy file
+  "/Users/guptaaryan16/Desktop/OSS/WasmEdge/build/lib/api/libwasmedge.0.0.3.tbd"
+  to "/usr/local/lib/libwasmedge.0.0.3.tbd": Permission denied.
+Call Stack (most recent call first):
+  build/lib/cmake_install.cmake:97 (include)
+  build/cmake_install.cmake:47 (include)
+
+
+sudo cmake --install build
+Password:
+-- Install configuration: "Release"
+-- Installing: /usr/local/lib/libwasmedge.0.0.3.tbd
+-- Installing: /usr/local/lib/libwasmedge.0.tbd
+-- Installing: /usr/local/lib/libwasmedge.0.0.3.dylib
+-- Installing: /usr/local/lib/libwasmedge.0.dylib
+-- Installing: /usr/local/lib/libwasmedge.dylib
+-- Installing: /usr/local/lib/libwasmedge.tbd
+-- Installing: /usr/local/include/wasmedge/wasmedge.h
+-- Installing: /usr/local/include/wasmedge/version.h
+-- Installing: /usr/local/include/wasmedge/enum.inc
+-- Installing: /usr/local/include/wasmedge/enum_configure.h
+-- Installing: /usr/local/include/wasmedge/enum_errcode.h
+-- Installing: /usr/local/include/wasmedge/enum_types.h
+-- Installing: /usr/local/include/wasmedge/int128.h
+-- Installing: /usr/local/lib/cmake/Llama/LlamaConfig.cmake
+-- Installing: /usr/local/lib/cmake/Llama/LlamaConfigVersion.cmake
+-- Installing: /usr/local/include/ggml.h
+-- Installing: /usr/local/include/ggml-alloc.h
+-- Installing: /usr/local/include/ggml-backend.h
+-- Installing: /usr/local/include/ggml-metal.h
+-- Installing: /usr/local/lib/libllama.a
+-- Installing: /usr/local/include/llama.h
+-- Installing: /usr/local/bin/convert.py
+-- Installing: /usr/local/bin/convert-lora-to-ggml.py
+-- Installing: /usr/local/bin/ggml-metal.metal
+-- Installing: /usr/local/include/simdjson.h
+-- Installing: /usr/local/lib/libsimdjson.a
+-- Installing: /usr/local/lib/cmake/simdjson/simdjson-config.cmake
+-- Installing: /usr/local/lib/cmake/simdjson/simdjson-config-version.cmake
+-- Installing: /usr/local/lib/cmake/simdjson/simdjsonTargets.cmake
+-- Installing: /usr/local/lib/cmake/simdjson/simdjsonTargets-release.cmake
+-- Installing: /usr/local/lib/pkgconfig/simdjson.pc
+-- Installing: /usr/local/lib/wasmedge/libwasmedgePluginWasiNN.tbd
+-- Installing: /usr/local/lib/wasmedge/libwasmedgePluginWasiNN.dylib
+-- Installing: /usr/local/bin/wasmedgec
+-- Installing: /usr/local/bin/wasmedge
