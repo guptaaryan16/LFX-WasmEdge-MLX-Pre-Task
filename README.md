@@ -71,6 +71,9 @@ curl -X POST http://localhost:8080/v1/chat/completions \
 Preview of the UI:
 <img src="./images/Screenshot 2024-02-05 at 11.12.55 PM.png">
 
+### Initial plugin files 
+
+I have also added some experiental files for the plugin [here](./plugin_sample).
 
 ### Thanks to WasmEdge Community
 
